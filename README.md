@@ -14,7 +14,7 @@ help command `python3 main.py -h` or `python3 main.py --help`:
 ```
 Usage: python3 main.py [filename] -out [width] [height]
 Note if no filename is given, the program will use the camera.
-Note if no width is given, the program will use 25% of the original width.
+Note if no width and height is given, the program will use the default width and height.
 Note if no height is given, the program will calculate the height based on the width.
 ```
 
