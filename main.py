@@ -13,6 +13,8 @@ def move(arr):
 
 def main():
 
+    usage ="Usage: python3 main.py [filename] -out [width] [height]\nNote if no filename is given, the program will use the camera.\nNote if no width and height is given, the program will use the default width and height.\nNote if no height is given, the program will calculate the height based on the width."
+
     # read arguments
 
     args = sys.argv
@@ -31,10 +33,10 @@ def main():
                     except:
                         outHeight = 0
                 case "-h":
-                    print("Usage: python3 main.py [filename] -out [width] [height]\nNote if no filename is given, the program will use the camera.\nNote if no width is given, the program will use 25% of the original width.\nNote if no height is given, the program will calculate the height based on the width.")
+                    print(usage)
                     return 0
                 case "-help":
-                    print("Usage: python3 main.py [filename] -out [width] [height]\nNote if no filename is given, the program will use the camera.\nNote if no width is given, the program will use 25% of the original width.\nNote if no height is given, the program will calculate the height based on the width.")
+                    print(usage)
                     return 0
                 case default:
                     filename = move(args)
